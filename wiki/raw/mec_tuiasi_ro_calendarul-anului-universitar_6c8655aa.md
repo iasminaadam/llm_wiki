@@ -1,0 +1,7 @@
+# Source
+
+https://mec.tuiasi.ro/calendarul-anului-universitar
+
+---
+
+TUIASI este printre primele instituții de învățământ superior de profil tehnic din țară și se încadrează în categoria universităților de cercetare avansată și educație.

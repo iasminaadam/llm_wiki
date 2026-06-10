@@ -1,0 +1,43 @@
+# Source
+
+https://ieeia.tuiasi.ro/studenti/taxe
+
+---
+
+__Taxele de școlarizare în anul universitar 2025-2026__
+
+Studenții care nu au achitat tranșele taxei de școlarizare și nu au depus la secretariat cereri de amânare a plății taxei, vor fi propuși pentru __exmatriculare pentru neplata taxei de școlarizare.__
+
+După achitarea tranșei de plată, studentul are obligația de a trimite confirmarea plății pe adresa de e-mail a secretariatului.
+
+Pentru a se putea prezenta la **examenele din sesiunile de iarnă și de vară**, studenții cu taxă trebuie să își îndeplinească obligațiile de achitare a tranșelor din taxa de școlarizare la termenele stabilite, conform **Procedurilor de organizare a activității didactice a studenților PO.DID.01, PO.DID.02 și Contractului de studii:**
+
+**I tranșă: termen scadent: 15 octombrie 2025****a II-a tranșă: termen scadent: 15 ianuarie 2026****a III-a tranșă: termen scadent: 15 martie 2026****a IV-a tranșă: termen scadent: 1 iunie 2026**
+
+Taxele de școlarizare se achită **ONLINE**, pe portalul www.* taxe*.
+
+*.*
+
+**tuiasi***:*
+
+**ro**
+
+**Anul universitar 2024-2025**
+
+[HS 154_Taxe 2024-2025](https://ieeia.tuiasi.ro/wp-content/uploads/2024/12/HS-154_Taxe-2024-2025.pdf) (Hotărârea Senatului)
+
+**Anul universitar 2023-2024**
+
+**Anul universitar 2022-2023**
+
+Informații suplimentare privind modalitatea de achitare a taxele de școlarizare/refacere laboratoare/reexaminare pe platforma[www.taxe. tuiasi.ro]Studenții care nu au achitat tranșele taxei de școlarizare și nu au depus la secretariat cereri de amânare a plății taxei, vor fi propuși pentruDupă achitarea tranșei de plată, studentul are obligația de a trimite confirmarea plății pe adresa de e-mail a secretariatuluiexmatriculare pentru neplata taxei de școlarizare.
+
+**Anul universitar 2021-2022**
+
+Informații suplimentare privind modalitatea de achitare a taxele de școlarizare/refacere laboratoare/reexaminare pe platforma[www.taxe. tuiasi.ro]
+
+Stimați studenți, Vă informam că se pot efectua plăți online pentru toate tipurile de taxe universitare:[https://www.tuiasi.ro/noutati/studentii-tuiasi-pot-sa-plateasca-integral-toate-taxele-online-pe-o-platforma-dezvoltata-de-specialistii-universitatii][https://taxe.tuiasi.ro/informare.php]După ce bifați că sunteți de acord cu condițiile GDPR, deschideți formularul de plată online, introduceți datele dvs. de student, selectați campusul DIDACTIC, facultatea, tipul de taxă.
+
+**Anul universitar 2020-2021**
+
+Stimați studenți, Vă informam că se pot efectua plăți online pentru toate tipurile de taxe universitare:[https://www.tuiasi.ro/noutati/studentii-tuiasi-pot-sa-plateasca-integral-toate-taxele-online-pe-o-platforma-dezvoltata-de-specialistii-universitatii][https://taxe.tuiasi.ro/informare.php]După ce bifați că sunteți de acord cu condițiile GDPR, deschideți formularul de plată online, introduceți datele dvs. de student, selectați campusul DIDACTIC, facultatea, tipul de taxă.

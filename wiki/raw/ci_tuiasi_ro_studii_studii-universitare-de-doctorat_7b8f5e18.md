@@ -1,0 +1,11 @@
+# Source
+
+https://ci.tuiasi.ro/studii/studii-universitare-de-doctorat
+
+---
+
+Perfecţionarea prin doctorat reprezintă al treilea ciclu de pregătire universitară avansată. Programul de doctorat, colocviul de admitere la doctorat, programul de pregătire, susţinerea publică a tezei de doctorat şi obţinerea diplomei de Doctor se desfăşoară în conformitate cu Legea învăţământului cu modificările şi completările ulterioare, în temeiul art. 14 din Legea nr. 288/24 iunie 2004, şi a Regulamentului privind organizarea şi desfăşurarea studiilor universitare de doctorat.
+
+Conducătorii de doctorat sunt profesori universitari care au titlul de doctor, atestaţi de Consiliul Naţional de Atestare a Titlurilor, Diplomelor şi Certificatelor Universitare din Ministerul Educaţiei, Cercetării, Tineretului şi Sportului.
+
+Pentru alte informații, vă rugăm să consultați și site-ul aferent domeniului Inginerie Civilă și Instalații.

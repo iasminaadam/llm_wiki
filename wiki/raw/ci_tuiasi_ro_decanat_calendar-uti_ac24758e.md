@@ -1,0 +1,7 @@
+# Source
+
+https://ci.tuiasi.ro/decanat/calendar-uti
+
+---
+
+[Calendarul TUIASI 2021-2022, conform Hotărârii Senatului nr.95/21.5.2021](https://ci.tuiasi.ro/wp-content/uploads/studenti/ORAR/2021-2022/Calendar%2021-22.pdf)[Calendarul TUIASI 2020-2021, conform Hotărârii Senatului nr.173/7.7.2020](https://ci.tuiasi.ro/wp-content/uploads/decanat/CAU2020-2021%20v1.pdf)[Calendarul TUIASI 2020-2021, conform Hotărârii Senatului nr.173/7.7.2020](https://ci.tuiasi.ro/wp-content/uploads/decanat/CAU2020-2021%20v1.pdf)[Calendarul TUIASI 2019-2020, conform Hotărârii Senatului nr.144/5.5.2020](https://ci.tuiasi.ro/wp-content/uploads/decanat/Calendar%20UTI%2019-20%20var%205%20mai%202020.pdf)[Calendarul TUIASI 2019-2020 conform Hotărârii Senatului Nr.136/19.6.2019](https://ci.tuiasi.ro/wp-content/uploads/decanat/Calendar-2019-2020.pdf)[Calendarul TUIASI 2018-2019 conform Hotărârii Senatului Nr.25/14.2.2019](http://www.ci.tuiasi.ro/download/decanat/calendar/HS25CAU18-19.pdf).[Calendarul anului universitar 2017-2018, conform Hotărârii Senatului TUIASI nr.199/16.6.2017](http://www.ci.tuiasi.ro/download/decanat/calendar/HS%20199_16.06.2017.pdf)[Calendarul anului universitar 2016-2017, conform Hotărârii Senatului TUIASI nr.296/22.9.2016](http://www.ci.tuiasi.ro/download/decanat/calendar/calendar%202016-2017a.pdf)

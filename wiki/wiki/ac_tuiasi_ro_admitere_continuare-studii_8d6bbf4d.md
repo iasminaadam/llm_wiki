@@ -1,0 +1,32 @@
+# Admiterea la Continuarea Studiilor Universitare - Facultatea de Automatică şi Calculatoare
+
+## 1. Informații generale
+
+**Facultatea de Automatică şi Calculatoare** organizează **Admiterea la continuare de studii**, pe două domenii de studii universitare de licenţă (4 ani): **Calculatoare şi tehnologia informaţiei** şi **Ingineria sistemelor**.
+
+Candidaţii, absolvenţi cu diplomă de absolvire ai studiilor universitare de scurtă durată (colegiu tehnic, specializările **Tehnică de calcul**, **Echipamente de automatizare**, **Electronică şi telecomunicaţii**), pot opta la înscriere pentru locuri cu taxă la oricare din cele două domenii. În funcţie de diferenţele pe care vor trebui să le susţină, vor fi înmatriculaţi într-un an de studiu din ciclul de licenţă.
+
+În funcţie de locurile disponibile, studenţii vor putea să ocupe un loc la buget abia în anul 4 – dacă au beneficiat de 3 ani de studii universitare de scurtă durată subvenţionate de la buget, sau mai devreme – dacă au beneficiat de mai puțini ani de studii universitare subvenţionate de la buget.
+
+Absolvenţii studiilor universitare de licenţă ai Facultăţii de Automatică şi Calculatoare primesc Diplomă de Licenţă şi calificarea de Inginer în domeniul şi specializarea absolvite.
+
+## 2. Număr de locuri
+
+- **Domeniu: Calculatoare și tehnologia informației**
+  - **Număr de locuri**: –
+  
+- **Domeniu: Ingineria sistemelor**
+  - **Număr de locuri**: –
+
+## 3. Metoda de selecție
+
+**Concurs de dosare**: 
+- **Media de admitere = Media examenului de absolvire**
+
+Pentru mai multe detalii, vă rugăm să vă adresați secretariatului facultăţii:
+- **Tel.**: +40-232-278680 / int. 1331
+- **Tel/fax**: +40-232-231343
+- **E-mail**: decanat@ac.tuiasi.ro
+- **E-mail**: secretariat_ac@tuiasi.ro
+
+> [!NOTE] Informațiile despre dosarul de înscriere pot fi găsite în [[acte_necesare_admitere]].
