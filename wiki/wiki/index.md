@@ -1,35 +1,42 @@
 # Admitere TUIASI - Pagina Principală
 
 ## 🏛️ Informații Generale Universitate
-* [[acte_necesare_admitere]] - Actele necesare pentru admiterea la universitate.
-* [[calendar_general]] - Calendarul general al procesului de admitere.
-* [[taxe_generale]] - Taxele generale aplicabile studenților.
-* [[tuiasi_dosarul_de_inscriere]] - Informațiile despre dosarul de înscriere online.
-* [[tuiasi_ro_licenta_candidati-de-etnie-roma_bcfc8c9f]] - Informațiile despre procesul de admitere pentru candidații cetățeni români de etnie romă.
-* [[acte_necesare_admitere_studii]] - Actele necesare pentru eliberarea actelor de studii.
+* [[universitate_informatii_generale]] - Informații generale despre TUIASI.
+* [[acte_necesare_admitere]] - Actele necesare pentru înscrierea la universitate în anul 2025-2026.
 
-## 🎓 Facultăți și Programe de Studiu
-### Universitate General (Informații Globale TUIASI)
-* [[tuiasi_metode_selectie_licenta_2026]] - Metodele de selecție pentru admiterea la licență în anul 2026.
-* [[tuiasi_ro_admitere_master_b6ee9367]] - Informațiile despre procesul de admitere la masterat.
-* [[tuiasi_ro_admitere_doctorat_8fb85a27]] - Informații generale despre procesul de admitere la doctorat.
-* [[tuiasi_ro_doctorat_documente_utile]] - Documentele utile pentru studenții doctoranzi.
-* [[tuiasi_candidati_romani_de_pretutindeni_licenta]] - Informațiile despre procesul de admitere pentru candidații români din țară.
-* [[tuiasi_ro_admitere_c569a38e]] - Informații generale despre procesul de admitere la universitate.
-* [[tuiasi_licenta_4dbe4fda]] - Informațiile despre procesul de admitere la licență.
-* [[tuiasi_ro_masterat_masterat-candidati-de-etnie-roma_00f41ecf]] - Informațiile despre procesul de admitere pentru candidații cetățeni români de etnia rromă.
-* [[tuiasi_ro_masterat_masterat-candidati-romani-de-pretutindeni_6bbb177f]] - Informațiile despre procesul de admitere la masterat pentru românii de pretutindeni.
-* [[tuiasi_ro_masterat_metode-de-selectie_6cdba9ad]] - Metodologia de selecție pentru candidații la masterat.
-* [[acte_necesare_admitere_masterat]] - Actele necesare pentru admiterea la masterat.
-* [[tuiasi_numar_locuri_masterat_2026-2027]] - Numărul de locuri disponibile pentru anul 2026/2027.
-* [[tuiasi_ro_licenta_taxe-si-finantare_addf3713]] - Informațiile despre taxele de înscriere la concursul de admitere.
-* [[tuiasi_doctorat_candidati]] - Informații despre procesul de admitere pentru candidații la doctorat.
-* [[tuiasi_ro_admitere_licenta_8d23fd92]] - Informațiile despre procesul de admitere la licență.
-* [[tuiasi_ro_masterat_taxe-si-finantare_85b35093]] - Taxele și finanțările pentru masterat.
-* [[tuiasi_ro_masterat_masterat-candidati-non-ue_6cb12276]] - Informațiile despre procesul de admitere la studiile universitare de masterat pentru candidații non-UE.
-* [[tuiasi_ro_masterat_masterat-candidati-din-ue_48bef66f]] - Informațiile despre procesul de admitere la studiile universitare de masterat pentru cetățenii UE, SEE și CE.
 
-### Facultatea de Design Industrial și Managementul Afacerilor
-* [[dima_tuiasi_ro_admitere_admitere-la-zi_a5be90fc]] - Informațiile despre procesul de admitere la licență pentru Facultatea de Textile, Pielărie și Management Industrial.
-* [[dima_forma_selectie_master.md]] - Forma de selecție pentru studiile de masterat la FDIMA.
-* [[dima_tuiasi_ro_admitere_facilitati_5b81fe3e]] - Informațiile despre facilitățile oferite studenților Facultății de Design Industrial și Managementul Afacerilor.
+TUIASI este printre primele instituții de învățământ superior de profil tehnic din țară și se încadrează în categoria universităților de cercetare avansată și educație.
+## Facultatea de Hidrotehnică, Geodezie și Ingineria Mediului
+* [[hgim_doctorat]] - Informațiile despre programul de doctorat oferit de Facultatea de Hidrotehnică, Geodezie și Ingineria Mediului.
+
+## Facultatea de Automatică și Calculatoare
+* [[ac_calendar_admitere]] - Calendarul didactic pentru anul universitar 2026.
+
+## Facultatea de Arhitectură
+
+## Facultatea de Inginerie Chimică și Protecția Mediului
+
+## Facultatea de Construcții și Instalații
+* [[ci_programe_studiu]] - Programele de studiu oferite de Facultatea de Construcții și Instalații.
+
+## Facultatea de Construcții de Mașini și Management Industrial
+* [[cmmi_informatii_generale_admitere]] - Informații generale despre procesul de admitere la Facultatea de Construcții de Mașini și Management Industrial.
+* [[cmmi_programe_studiu_licenta]] - Programele de studiu oferite la nivelul licenței de către Facultatea de Construcții de Mașini și Management Industrial.
+* [[cmmi_taxe_scolarizare]] - Taxele de școlarizare pentru anul universitar 2025-2026.
+* [[cmmi_programe_studiu_master]] - Programele de studiu la nivelul masteratului oferite de Facultatea de Construcții de Mașini și Management Industrial.
+
+## Facultatea de Electronică, Telecomunicații și Tehnologia Informației
+
+## Facultatea de Hidrotehnică, Geodezie și Ingineria Mediului
+
+## Facultatea de Inginerie Electrică, Energetică și Informatică Aplicată
+
+## Facultatea de Mecanică
+* [[mecanică_set]] - Programul de studii Sisteme și Echipamente Termice (SET) oferit de Facultatea de Mecanică.
+* [[mec_admitere_straini]] - Informații despre admiterea studenților străini la Facultatea de Mecanică.
+* [[mec_calendar_anului_universitar]] - Calendarul anului universitar pentru Facultatea de Mecanică.
+* [[facultatea_de_mecanica]] - Informații despre programele de studiu oferite de Facultatea de Mecanică, inclusiv masteratul Autovehicule Hibride și Electrice.
+
+## Facultatea de Știința și Ingineria Materialelor
+
+## Facultatea de Design Industrial și Managementul Afacerilor
