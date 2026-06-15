@@ -1,10 +1,12 @@
+#tools.py
 import requests
 import trafilatura
 from bs4 import BeautifulSoup
 from urllib.parse import quote    
 import re
 from config import *
-
+import os
+from datetime import datetime
 
 def read_wiki_pages(files):
     """
@@ -236,6 +238,15 @@ def execute_tool(tool_text):
         return read_url(url)
 
     # ---------------------------------
+
+    elif tool_name == "GET_DATE":
+
+        now = datetime.now()
+        return (
+            "📅 Data curentă este:\n"
+            f"{now.strftime('%Y-%m-%d')}\n\n"
+            f"⏰ Ora curentă este:\n{now.strftime('%H:%M:%S')}"
+        )
 
     return (
         f"❌ Tool necunoscut: "

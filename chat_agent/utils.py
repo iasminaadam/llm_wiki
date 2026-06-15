@@ -1,6 +1,8 @@
+#utils.py
 import os
 import json
 from config import *
+from config import client, MODEL_NAME
 
 def load_memory():
 

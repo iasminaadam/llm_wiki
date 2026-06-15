@@ -1,3 +1,4 @@
+#config.py
 from ollama import Client
 import os
 
@@ -92,6 +93,18 @@ https://...
 </tool>
 
 ────────────────────────────────────────
+
+GET_DATE
+
+Returnează data și ora curentă a sistemului.
+
+Format:
+
+<tool>
+GET_DATE
+</tool>
+
+────────────────────────────────────────
 PROTOCOL OBLIGATORIU
 ────────────────────────────────────────
 
@@ -157,4 +170,5 @@ REGULI
 - Citează paginile Wiki folosind [[pagina]].
 - Citează sursele web folosind URL-ul paginii.
 - Preferă întotdeauna Wiki-ul înaintea căutării web.
+- Dacă întrebarea utilizatorului implică: „cât timp mai e până…”; „câte zile mai sunt până…”; comparații între data curentă și un eveniment foloseste GET_DATE
 """
