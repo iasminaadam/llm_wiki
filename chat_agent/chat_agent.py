@@ -21,12 +21,12 @@ def run_agent_graph(intrebare_utilizator):
     for item in memory:
 
         memory_text += f"""
-Întrebare:
-{item['question']}
+            Întrebare:
+            {item['question']}
 
-Rezumat:
-{item['answer_summary']}
-"""
+            Rezumat:
+            {item['answer_summary']}
+        """
 
     messages = [
         {
@@ -36,27 +36,27 @@ Rezumat:
         {
             "role": "user",
             "content": f"""
-ISTORIC:
+        ISTORIC:
 
-{memory_text}
+        {memory_text}
 
-ÎNTREBARE:
+        ÎNTREBARE:
 
-{intrebare_utilizator}
+        {intrebare_utilizator}
 
-INDEX WIKI:
+        INDEX WIKI:
 
-{index_content}
-"""
-        }
-    ]
+        {index_content}
+        """
+    }
+]
 
     for step in range(MAX_AGENT_STEPS):
 
         print(
             f"\n🧠 Pasul {step+1}"
         )
-
+        
         response = client.chat(
             model=MODEL_NAME,
             messages=messages
@@ -102,11 +102,10 @@ INDEX WIKI:
                 + "=" * 20
             )
 
-            print(raspuns_final)
+            # print(raspuns_final)
+            # print("=" * 60)
 
-            print("=" * 60)
-
-            return
+            return raspuns_final
 
         # -------------------------
         # tool calls
@@ -128,7 +127,7 @@ INDEX WIKI:
             print(
                 "\n🔧 Execut tool..."
             )
-
+            
             result = execute_tool(
                 tool_text
             )
