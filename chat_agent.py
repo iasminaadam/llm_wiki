@@ -1,10 +1,14 @@
 import os
+import json
 import re
 from ollama import Client
 
 WIKI_DIR = "wiki/wiki"
 MODEL_NAME = "qwen2.5:32b"
 client = Client(host='http://localhost:11435')
+
+MEMORY_FILE = "memory.json"
+MAX_MEMORY_ITEMS = 5
 
 def citeste_pagina(nume_fisier):
     """Deschide și citește o pagină din Wiki."""
@@ -21,6 +25,74 @@ def citeste_pagina(nume_fisier):
             return f.read()
     else:
         return f"❌ Eroare: Pagina '{nume_fisier}' nu există în Wiki."
+    
+def load_memory():
+
+    if not os.path.exists(MEMORY_FILE):
+        return []
+
+    with open(
+        MEMORY_FILE,
+        "r",
+        encoding="utf-8"
+    ) as f:
+        return json.load(f)
+    
+def save_memory(memory):
+
+    with open(
+        MEMORY_FILE,
+        "w",
+        encoding="utf-8"
+    ) as f:
+        json.dump(
+            memory,
+            f,
+            ensure_ascii=False,
+            indent=2
+        )
+
+def add_memory(question, answer):
+
+    memory = load_memory()
+
+    memory.append({
+        "question": question,
+        "answer_summary": answer
+    })
+
+    memory = memory[-MAX_MEMORY_ITEMS:]
+
+    save_memory(memory)
+
+def summarize_answer(
+    question,
+    answer
+):
+
+    response = client.chat(
+        model=MODEL_NAME,
+        messages=[
+            {
+                "role": "system",
+                "content": """
+                Rezumă răspunsul în maximum 2 propoziții.
+                """
+            },
+            {
+                "role": "user",
+                "content": f"""
+                Întrebare:
+                {question}
+
+                Răspuns:
+                {answer}
+                """
+            }
+        ]
+    )
+
+    return response["message"]["content"]
 
 AGENT_SYSTEM_PROMPT = """
 Ești un Asistent Academic Inteligent. Sarcina ta este să răspunzi la întrebările utilizatorului folosind EXCLUSIV informațiile din Wiki-ul local.
@@ -47,10 +119,20 @@ def run_agent_graph(intrebare_utilizator):
     
     # Pre-încărcăm indexul din start
     continut_index = citeste_pagina("index.md")
+
+    memory = load_memory()
+    memory_text = ""
+    for item in memory:
+        memory_text += f"""
+        Întrebare:
+        {item['question']}
+        Rezumat răspuns:
+        {item['answer_summary']}
+        """
     
     istoric_cautare = [
         {"role": "system", "content": AGENT_SYSTEM_PROMPT},
-        {"role": "user", "content": f"Întrebare: {intrebare_utilizator}\n\n[Conținutul fișierului index.md (Harta Grafului)]:\n\n{continut_index}\n\nAnalizează indexul și decide ce pagini trebuie să deschizi. Oferă o `Acțiune:` (dacă ai nevoie de detalii) sau direct un `Răspuns:` (dacă informația din index e suficientă)."}
+        {"role": "user", "content": f"Istoric conversație: {memory_text}\n\n Întrebare: {intrebare_utilizator}\n\n[Conținutul fișierului index.md (Harta Grafului)]:\n\n{continut_index}\n\nAnalizează indexul și decide ce pagini trebuie să deschizi. Oferă o `Acțiune:` (dacă ai nevoie de detalii) sau direct un `Răspuns:` (dacă informația din index e suficientă)."}
     ]
     
     pas_curent = 1
@@ -58,7 +140,7 @@ def run_agent_graph(intrebare_utilizator):
     
     while pas_curent <= max_pasi:
         print(f"\n🧠 [Pasul {pas_curent}] AI analizează datele...")
-        
+                
         response = client.chat(model=MODEL_NAME, messages=istoric_cautare)
         ai_output = response['message']['content']
         
@@ -71,6 +153,9 @@ def run_agent_graph(intrebare_utilizator):
         if "Răspuns:" in ai_output:
             print("\n✅ [Sistem] Agentul a terminat parcurgerea grafului!")
             raspuns_final = ai_output.split("Răspuns:")[-1].strip()
+
+            summary = summarize_answer(intrebare_utilizator, raspuns_final)
+            add_memory(intrebare_utilizator, summary)
             
             print("\n" + "="*20 + " RĂSPUNS FINAL " + "="*20)
             print(raspuns_final)
