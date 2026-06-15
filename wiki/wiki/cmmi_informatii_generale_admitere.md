@@ -5,3 +5,8 @@ Facultatea Construcţii de Maşini şi Management Industrial organizează Admite
 Candidaţii pot opta la înscriere pentru oricare dintre cele trei domenii și oricare dintre cele două forme de finanţare, în ordinea preferinţelor. La finalizarea studiilor universitare de licență, absolvenţii primesc Diploma de Licență și calificarea de Inginer în domeniul și programul de studii absolvite.
 
 Toţi candidaţii declaraţi admişi și înmatriculaţi în anul I de studiu, care nu au domiciliul în municipiul Iași, au asigurate locuri de cazare, în anul universitar 2025-2026, în caminul T17 din campusul Tudor Vladimirescu.
+## contact_info
+### Informații de Contact
+
+- Email: admissions@tuiasi.ro
+- Telefon: 0232702468

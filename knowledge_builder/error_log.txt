@@ -1,0 +1,75 @@
+dima_tuiasi_ro_forma-selectie-master_4c9fca41.md
+❌ Eroare: Secțiunea 'Facultatea de Design Industrial și Managementul Afacerilor' nu a fost găsită în index.md. AI-ul NU are voie să creeze secțiuni noi în index. Te rog folosește una dintre secțiunile sau facultățile oficiale existente.
+dima_tuiasi_ro_forma-selectie-master_4c9fca41.md
+❌ Eroare: Secțiunea 'Facultatea de Design Industrial și Managementul Afacerilor' nu a fost găsită în index.md. AI-ul NU are voie să creeze secțiuni noi în index. Te rog folosește una dintre secțiunile sau facultățile oficiale existente.
+dima_tuiasi_ro_forma-selectie-master_4c9fca41.md
+❌ Eroare: Secțiunea '🎓 Facultăți și Programe de Studiu' nu a fost găsită în index.md. AI-ul NU are voie să creeze secțiuni noi în index. Te rog folosește una dintre secțiunile sau facultățile oficiale existente.
+dima_tuiasi_ro_forma-selectie-master_4c9fca41.md
+❌ Eroare: Secțiunea 'Facultatea de Design Industrial și Managementul Afacerilor' nu a fost găsită în index.md. AI-ul NU are voie să creeze secțiuni noi în index. Te rog folosește una dintre secțiunile sau facultățile oficiale existente.
+dima_tuiasi_ro_forma-selectie-master_4c9fca41.md
+❌ Eroare: Secțiunea '🎓 Facultăți și Programe de Studiu' nu a fost găsită în index.md. AI-ul NU are voie să creeze secțiuni noi în index. Te rog folosește una dintre secțiunile sau facultățile oficiale existente.
+dima_tuiasi_ro_forma-selectie-master_4c9fca41.md
+❌ Eroare: Secțiunea '🎓 Facultăți și Programe de Studiu' nu a fost găsită în index.md. AI-ul NU are voie să creeze secțiuni noi în index. Te rog folosește una dintre secțiunile sau facultățile oficiale existente.
+dima_tuiasi_ro_forma-selectie-master_4c9fca41.md
+❌ Eroare: Secțiunea 'Facultatea de Design Industrial și Managementul Afacerilor' nu a fost găsită în index.md. AI-ul NU are voie să creeze secțiuni noi în index. Te rog folosește una dintre secțiunile sau facultățile oficiale existente.
+dima_tuiasi_ro_admitere_e7adaa19.md
+❌ Eroare: Secțiunea '🎓 Facultăți și Programe de Studiu' nu a fost găsită în index.md. AI-ul NU are voie să creeze secțiuni noi în index. Te rog folosește una dintre secțiunile sau facultățile oficiale existente.
+dima_tuiasi_ro_admitere_e7adaa19.md
+❌ Eroare: Secțiunea '🎓 Facultăți și Programe de Studiu' nu a fost găsită în index.md. AI-ul NU are voie să creeze secțiuni noi în index. Te rog folosește una dintre secțiunile sau facultățile oficiale existente.
+FAILED FILE: ac_tuiasi_ro_admitere_doctorat_4982ae70.md
+tuiasi_ro_masterat_metode-de-selectie_6cdba9ad.md
+❌ Eroare: Secțiunea 'metode_selectie_admitere' nu a fost găsită în index.md. AI-ul NU are voie să creeze secțiuni noi în index. Te rog folosește una dintre secțiunile sau facultățile oficiale existente.
+tuiasi_ro_masterat_metode-de-selectie_6cdba9ad.md
+❌ Eroare: Secțiunea 'metode_de_selecție' nu a fost găsită în index.md. AI-ul NU are voie să creeze secțiuni noi în index. Te rog folosește una dintre secțiunile sau facultățile oficiale existente.
+tuiasi_ro_masterat_metode-de-selectie_6cdba9ad.md
+❌ Eroare: Secțiunea '🎓 Facultăți și Programe de Studiu' nu a fost găsită în index.md. AI-ul NU are voie să creeze secțiuni noi în index. Te rog folosește una dintre secțiunile sau facultățile oficiale existente.
+dima_tuiasi_ro_studii_licenta_37c0b891.md
+❌ Eroare: Secțiunea '🎓 Facultăți și Programe de Studiu' nu a fost găsită în index.md. AI-ul NU are voie să creeze secțiuni noi în index. Te rog folosește una dintre secțiunile sau facultățile oficiale existente.
+dima_tuiasi_ro_studii_licenta_37c0b891.md
+❌ Eroare: Secțiunea '🎓 Facultăți și Programe de Studiu' nu a fost găsită în index.md. AI-ul NU are voie să creeze secțiuni noi în index. Te rog folosește una dintre secțiunile sau facultățile oficiale existente.
+dima_tuiasi_ro_studii_licenta_37c0b891.md
+❌ Tool error:
+dima_tuiasi_ro_studii_licenta_37c0b891.md
+❌ Tool error:
+dima_tuiasi_ro_admitere-licenta-2_fd83c3f3.md
+❌ Eroare: Secțiunea '🎓 Facultăți și Programe de Studiu' nu a fost găsită în index.md. AI-ul NU are voie să creeze secțiuni noi în index. Te rog folosește una dintre secțiunile sau facultățile oficiale existente.
+tuiasi_ro_masterat_055c53fd.md
+❌ Pagina 'numar_locuri_master_2026.md' există deja. Folosește UPDATE_PAGE.
+tuiasi_ro_masterat_055c53fd.md
+❌ Pagina 'ac_calendar_admitere_master.md' există deja. Folosește UPDATE_PAGE.
+tuiasi_ro_masterat_055c53fd.md
+❌ Eroare: Secțiunea 'Facultatea de Inginerie Chimică și Protecția Mediului „Cristofor Simionescu”' nu a fost găsită în index.md. AI-ul NU are voie să creeze secțiuni noi în index. Te rog folosește una dintre secțiunile sau facultățile oficiale existente.
+tuiasi_ro_masterat_055c53fd.md
+❌ Pagina 'mec_calendar_admitere_master.md' există deja. Folosește UPDATE_PAGE.
+tuiasi_ro_masterat_055c53fd.md
+❌ Pagina 'dima_calendar_admitere_master.md' există deja. Folosește UPDATE_PAGE.
+mec_tuiasi_ro_studii_licenta_e953063f.md
+❌ Eroare: Secțiunea '🎓 Facultăți și Programe de Studiu' nu a fost găsită în index.md. AI-ul NU are voie să creeze secțiuni noi în index. Te rog folosește una dintre secțiunile sau facultățile oficiale existente.
+hgim_tuiasi_ro_admitere_licenta_c3d60b1f.md
+❌ Eroare: Secțiunea '🎓 Facultăți și Programe de Studiu' nu a fost găsită în index.md. AI-ul NU are voie să creeze secțiuni noi în index. Te rog folosește una dintre secțiunile sau facultățile oficiale existente.
+hgim_tuiasi_ro_admitere_licenta_c3d60b1f.md
+❌ Eroare: Secțiunea '🎓 Facultăți și Programe de Studiu' nu a fost găsită în index.md. AI-ul NU are voie să creeze secțiuni noi în index. Te rog folosește una dintre secțiunile sau facultățile oficiale existente.
+hgim_tuiasi_ro_admitere_licenta_c3d60b1f.md
+❌ Eroare: Secțiunea '🎓 Facultăți și Programe de Studiu' nu a fost găsită în index.md. AI-ul NU are voie să creeze secțiuni noi în index. Te rog folosește una dintre secțiunile sau facultățile oficiale existente.
+icpm_tuiasi_ro_studii_master_18c12c84.md
+❌ Eroare: Secțiunea '🎓 Facultăți și Programe de Studiu' nu a fost găsită în index.md. AI-ul NU are voie să creeze secțiuni noi în index. Te rog folosește una dintre secțiunile sau facultățile oficiale existente.
+tuiasi_ro_admitere_licenta_8d23fd92.md
+❌ Pagina 'contact_admitere.md' există deja. Folosește UPDATE_PAGE.
+dima_tuiasi_ro_admitere_regulamente_b32f5a73.md
+❌ Tool error:
+cmmi_tuiasi_ro_studii_licenta_2a74515f.md
+❌ Pagina 'cmmi_programe_studiu_licenta.md' există deja. Folosește UPDATE_PAGE.
+ac_tuiasi_ro_studii_masterat_invatare-automata-robotica-si-control_cb2908b8.md
+❌ Pagina 'ac_master_mlrc.md' există deja. Folosește UPDATE_PAGE.
+arh_tuiasi_ro_admitere-2025_dc55310b.md
+❌ Tool error:
+ieeia_tuiasi_ro_studii_licenta_000b81be.md
+❌ Eroare: Secțiunea '🎓 Facultăți și Programe de Studiu' nu a fost găsită în index.md. AI-ul NU are voie să creeze secțiuni noi în index. Te rog folosește una dintre secțiunile sau facultățile oficiale existente.
+ieeia_tuiasi_ro_studii_licenta_000b81be.md
+❌ Eroare: Secțiunea '🎓 Facultăți și Programe de Studiu' nu a fost găsită în index.md. AI-ul NU are voie să creeze secțiuni noi în index. Te rog folosește una dintre secțiunile sau facultățile oficiale existente.
+icpm_tuiasi_ro_admitere_master_64a6e621.md
+❌ Eroare: Secțiunea '🎓 Facultăți și Programe de Studiu' nu a fost găsită în index.md. AI-ul NU are voie să creeze secțiuni noi în index. Te rog folosește una dintre secțiunile sau facultățile oficiale existente.
+cmmi_tuiasi_ro_admitere_licenta_acte-necesare-pentru-admiterea-la-licenta_85870c38.md
+❌ Eroare: Secțiunea 'cmmi_licenta_acte_necesare' nu a fost găsită în index.md. AI-ul NU are voie să creeze secțiuni noi în index. Te rog folosește una dintre secțiunile sau facultățile oficiale existente.
+icpm_tuiasi_ro_studii_licenta_64fba067.md
+❌ Eroare: Secțiunea '🎓 Facultăți și Programe de Studiu' nu a fost găsită în index.md. AI-ul NU are voie să creeze secțiuni noi în index. Te rog folosește una dintre secțiunile sau facultățile oficiale existente.

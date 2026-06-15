@@ -1,0 +1,5 @@
+# Sistemica Transporturilor Autopropulsate (STA)
+
+Creșterea numărului fizic de autovehicule rutiere impune organizarea sistemelor de transport rutier din punct de vedere al siguranței traficului, în scopul reducerii costurilor materiale și sociale legate de evenimentele rutiere.
+
+Această specializare oferă un larg câmp de activitate absolvenților. Astfel, există numeroase organisme implicate în probleme de organizare și sistematizare a traficului rutier, între care trebuie avute în vedere, în primul rând, primăriile orașelor și municipiilor, prin serviciile lor de specialitate. Trebuie menționate apoi instituțiile implicate în acțiunea de sistematizare a drumurilor naționale și europene. Nu în ultimul rând, absolvenții acestei specializări pot avea un rol important și în cadrul întreprinderilor de transport auto.
