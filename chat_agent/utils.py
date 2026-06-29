@@ -49,7 +49,7 @@ def summarize_answer(
 ):
 
     response = client.chat(
-        model=MODEL_NAME,
+        model="llama3.2:1b",
         messages=[
             {
                 "role": "system",
@@ -71,3 +71,11 @@ def summarize_answer(
     )
 
     return response["message"]["content"]
+
+def clear_memory_on_start():
+    if os.path.exists(MEMORY_FILE):
+        try:
+            with open(MEMORY_FILE, 'w') as f:
+                f.write('[]')
+        except Exception as e:
+            print(f"Error clearing memory: {e}")

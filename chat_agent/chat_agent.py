@@ -120,7 +120,7 @@ def run_agent_graph(intrebare_utilizator):
             print(
                 "\n⚠️ Niciun tool call detectat."
             )
-            return
+            return ai_output
 
         for tool_text in tool_matches:
 

@@ -1,5 +1,10 @@
 import streamlit as st
 from chat_agent import run_agent_graph
+import os
+from config import MEMORY_FILE
+from utils import *
+
+clear_memory_on_start()
 
 st.set_page_config(page_title="Agent Wiki TUIASI", page_icon="🤖")
 
