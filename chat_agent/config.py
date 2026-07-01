@@ -54,7 +54,7 @@ file3.md
 SEARCH_WEB
 <tool>
 SEARCH_WEB
-facultate_abreviere(ac, arh, etti, icpm, ci, cmmi, hgim, ieeia, mec, sim, dima, tuiasi)
+facultate_abreviere (exact una din acestea:  ac / arh / etti / icpm / ci / cmmi / hgim / ieeia / mec / sim / dima / tuiasi)
 cuvinte_cheie
 </tool>
 

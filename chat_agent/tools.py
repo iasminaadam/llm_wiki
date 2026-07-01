@@ -70,68 +70,58 @@ def search_site(
     query: str,
     max_results: int = 10
 ):
-
     faculty = faculty.lower().strip()
 
     if faculty not in FACULTY_DOMAINS:
-        return (
-            f"❌ Facultate necunoscută: "
-            f"{faculty}"
-        )
+        return f"❌ Facultate necunoscută: {faculty}"
 
-    url = (
-        FACULTY_DOMAINS[faculty]
-        + "/?s="
-        + quote(query)
-    )
+    url = f"{FACULTY_DOMAINS[faculty]}/?s={quote(query)}"
 
     try:
-
-        html = requests.get(
+        response = requests.get(
             url,
             timeout=15,
-            headers={
-                "User-Agent":
-                "Mozilla/5.0"
-            }
-        ).text
-
-        soup = BeautifulSoup(
-            html,
-            "html.parser"
+            headers={"User-Agent": "Mozilla/5.0"}
         )
+        response.raise_for_status()
+
+        soup = BeautifulSoup(response.text, "html.parser")
+
+        # Search results container
+        archive = soup.find("div", id="arhiva-articole")
+
+        if archive is None:
+            return "❌ Nu am găsit secțiunea cu rezultatele căutării."
 
         results = []
+        seen = set()
 
-        for a in soup.find_all(
-            "a",
-            href=True
-        ):
+        for article in archive.find_all("article"):
+
+            h2 = article.find(["h1", "h2", "h3"])
+            if h2 is None:
+                continue
+
+            a = h2.find("a", href=True)
+            if a is None:
+                continue
 
             href = a["href"]
 
-            if faculty not in href:
-                continue
-
-            if href not in results:
+            if href not in seen:
+                seen.add(href)
                 results.append(href)
 
-        if not results:
-            return (
-                "ℹ️ Niciun rezultat."
-            )
+            if len(results) >= max_results:
+                break
 
-        return "\n".join(
-            results[:max_results]
-        )
+        if not results:
+            return "ℹ️ Niciun rezultat."
+
+        return "\n".join(results)
 
     except Exception as e:
-
-        return (
-            f"❌ SEARCH_SITE error: "
-            f"{str(e)}"
-        )
-
+        return f"❌ SEARCH_SITE error: {e}"
 
 def read_url(url: str):
 

@@ -10,56 +10,78 @@ import time
 def run_agent_graph(intrebare_utilizator):
 
     total_start = time.perf_counter()
-    
+
     print("\n" + "-" * 50)
 
-    index_content = read_wiki_pages(
-        ["index.md"]
-    )
-
+    index_content = read_wiki_pages(["index.md"])
     memory = load_memory()
-
     memory_text = ""
 
     for item in memory:
-
         memory_text += f"""
-            Întrebare:
-            {item['question']}
-
-            Rezumat:
-            {item['answer_summary']}
+        Întrebare:
+        {item['question']}
+        Rezumat:
+        {item['answer_summary']}
         """
 
-    # Include index content only in the first message
-    initial_prompt = f"""
-        ISTORIC:
-
-        {memory_text}
-
-        ÎNTREBARE:
-
-        {intrebare_utilizator}
-
-        INDEX WIKI:
-
-        {index_content}
-        """
+    tool_results = []
 
     messages = [
         {
             "role": "system",
             "content": AGENT_SYSTEM_PROMPT
-        },
-        {
-            "role": "user",
-            "content": initial_prompt
         }
     ]
 
     for step in range(MAX_AGENT_STEPS):
 
-        print(f"\nPasul {step+1}")
+        print(f"\nPasul {step + 1}")
+
+        if step == 0:
+
+            prompt = f"""
+                ISTORIC:
+                {memory_text}
+                ÎNTREBARE:
+                {intrebare_utilizator}
+                INDEX WIKI:
+                {index_content}
+                """
+
+        elif step == MAX_AGENT_STEPS - 1:
+
+            prompt = f"""
+                ISTORIC:
+                {memory_text}
+                ÎNTREBARE:
+                {intrebare_utilizator}
+                REZULTATE TOOL-URI:
+                {chr(10).join(tool_results)}
+                ATENȚIE:
+                Acesta este ultimul pas disponibil.
+                Nu mai apela niciun tool.
+                Folosește exclusiv informațiile deja obținute și oferă răspunsul final.
+                Răspunde obligatoriu în formatul:
+                Răspuns:
+                ...
+                """
+
+        else:
+
+            prompt = f"""
+                ISTORIC:
+                {memory_text}
+                ÎNTREBARE:
+                {intrebare_utilizator}
+                REZULTATE TOOL-URI:
+                {chr(10).join(tool_results)}
+                """
+
+        messages.append({
+            "role": "user",
+            "content": prompt
+        })
 
         llm_start = time.perf_counter()
 
@@ -71,9 +93,7 @@ def run_agent_graph(intrebare_utilizator):
         llm_time = time.perf_counter() - llm_start
         print(f"⏱️ LLM Step {step+1}: {llm_time:.2f}s")
 
-        ai_output = response[
-            "message"
-        ]["content"]
+        ai_output = response["message"]["content"]
 
         print(ai_output)
 
@@ -82,17 +102,15 @@ def run_agent_graph(intrebare_utilizator):
             "content": ai_output
         })
 
-        # -------------------------
-        # răspuns final
-        # -------------------------
+        # ---------------------------------
+        # Final answer
+        # ---------------------------------
 
         if "Răspuns:" in ai_output:
 
-            raspuns_final = (
-                ai_output
-                .split("Răspuns:", 1)[1]
-                .strip()
-            )
+            raspuns_final = ai_output.split(
+                "Răspuns:", 1
+            )[1].strip()
 
             summary_start = time.perf_counter()
 
@@ -109,66 +127,55 @@ def run_agent_graph(intrebare_utilizator):
                 summary
             )
 
-            # print(
-            #     "\n"
-            #     + "=" * 20
-            #     + " RĂSPUNS FINAL "
-            #     + "=" * 20
-            # )
-
-            # print(raspuns_final)
-            # print("=" * 60)
             total_time = time.perf_counter() - total_start
             print(f"✅ Total response time: {total_time:.2f}s")
 
             return raspuns_final
 
-        # -------------------------
-        # tool calls
-        # -------------------------
+        # ---------------------------------
+        # Tool calls
+        # ---------------------------------
 
-        tool_matches = TOOL_PATTERN.findall(
-            ai_output
-        )
+        tool_matches = TOOL_PATTERN.findall(ai_output)
 
-        if not tool_matches:
+        # if not tool_matches:
 
-            print(
-                "\n⚠️ Niciun tool call detectat."
-            )
+        #     print("\n⚠️ Niciun tool call detectat.")
+
+        #     if step == MAX_AGENT_STEPS - 1:
+        #         return ai_output
+
+        #     return ai_output
+
+        # Ignore tool calls on last step
+        if step == MAX_AGENT_STEPS - 1:
+            print("⚠️ Modelul a încercat să apeleze tool-uri la ultimul pas.")
             return ai_output
 
         for tool_text in tool_matches:
 
-            print(
-                "\n🔧 Execut tool..."
-            )
-            
             tool_start = time.perf_counter()
+
             result = execute_tool(tool_text)
+
             tool_time = time.perf_counter() - tool_start
+
             print(f"⏱️ Tool execution: {tool_time:.2f}s")
 
-            # print(
-            #     "\n📄 Rezultat tool:"
-            # )
-            # print(
-            #     result[:1000]
-            # )
-
-            messages.append({
-                "role": "user",
-                "content":
+            tool_results.append(
                 f"""
-Rezultat tool:
+                    TOOL:
+                    {tool_text}
+                    REZULTAT:
+                    {result}
+                    """
+            )
 
-{result}
-"""
-            })
+    print("\n⚠️ S-a atins limita de pași.")
 
-    print(
-        "\n⚠️ S-a atins limita de pași."
-    )
+    return "Îmi pare rău, nu am reușit să formulez un răspuns."
+
+
 if __name__ == "__main__":
 
     clear_memory_on_start()
