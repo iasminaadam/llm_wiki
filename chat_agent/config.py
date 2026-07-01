@@ -8,7 +8,7 @@ client = Client(host='http://localhost:11435')
 
 MEMORY_FILE = "memory.json"
 MAX_MEMORY_ITEMS = 5
-MAX_AGENT_STEPS = 10
+MAX_AGENT_STEPS = 5
 
 FACULTY_DOMAINS = {
     "ac": "https://ac.tuiasi.ro",
@@ -48,12 +48,13 @@ READ_WIKI
 READ_WIKI
 file1.md
 file2.md
+file3.md
 </tool>
 
 SEARCH_WEB
 <tool>
 SEARCH_WEB
-facultate_abreviere
+facultate_abreviere(ac, arh, etti, icpm, ci, cmmi, hgim, ieeia, mec, sim, dima, tuiasi)
 cuvinte_cheie
 </tool>
 
@@ -72,7 +73,7 @@ GET_DATE
 PROTOCOL
 ────────────────────────
 1. Citește index.md → identifică pagini
-2. READ_WIKI pentru pagini relevante
+2. READ_WIKI pentru pagini relevante (maxim 3 pagini) - folosește doar pagini care există în index.md
 3. Dacă suficient → Răspuns final
 4. Dacă nu → SEARCH_WEB
 5. Analizează URL → READ_WEB_PAGE doar dacă relevant

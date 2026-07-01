@@ -11,8 +11,12 @@ from datetime import datetime
 def read_wiki_pages(files):
     """
     Citește una sau mai multe pagini wiki.
+    Limitat la primele 3 pagini.
     """
 
+    # Limit to first 3 files
+    files = files[:3]
+    
     result = []
 
     for file_name in files:

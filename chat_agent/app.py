@@ -4,11 +4,14 @@ import os
 from config import MEMORY_FILE
 from utils import *
 
-clear_memory_on_start()
 
 st.set_page_config(page_title="Agent Wiki TUIASI", page_icon="🤖")
 
-st.title("🤖 Agent Wiki TUIASI")
+if "memory_initialized" not in st.session_state:
+    clear_memory_on_start()
+    st.session_state.memory_initialized = True
+
+#st.title("🤖 Agent Wiki TUIASI")
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
@@ -19,7 +22,7 @@ for msg in st.session_state.messages:
         st.markdown(msg["content"])
 
 # input user
-user_input = st.chat_input("Scrie întrebarea ta...")
+user_input = st.chat_input("Write your question...")
 
 if user_input:
     # afișează user message
@@ -29,7 +32,7 @@ if user_input:
 
     # rulează agentul
     with st.chat_message("assistant"):
-        with st.spinner("Gândesc... 🧠"):
+        with st.spinner("Thinking... "):
             response = run_agent_graph(user_input)
 
             # IMPORTANT: modificăm funcția să RETURNeze răspunsul

@@ -5,9 +5,12 @@ import re
 from config import *
 from utils import *
 from tools import *
+import time
 
 def run_agent_graph(intrebare_utilizator):
 
+    total_start = time.perf_counter()
+    
     print("\n" + "-" * 50)
 
     index_content = read_wiki_pages(
@@ -28,14 +31,8 @@ def run_agent_graph(intrebare_utilizator):
             {item['answer_summary']}
         """
 
-    messages = [
-        {
-            "role": "system",
-            "content": AGENT_SYSTEM_PROMPT
-        },
-        {
-            "role": "user",
-            "content": f"""
+    # Include index content only in the first message
+    initial_prompt = f"""
         ISTORIC:
 
         {memory_text}
@@ -48,19 +45,31 @@ def run_agent_graph(intrebare_utilizator):
 
         {index_content}
         """
-    }
-]
+
+    messages = [
+        {
+            "role": "system",
+            "content": AGENT_SYSTEM_PROMPT
+        },
+        {
+            "role": "user",
+            "content": initial_prompt
+        }
+    ]
 
     for step in range(MAX_AGENT_STEPS):
 
-        print(
-            f"\n🧠 Pasul {step+1}"
-        )
-        
+        print(f"\nPasul {step+1}")
+
+        llm_start = time.perf_counter()
+
         response = client.chat(
             model=MODEL_NAME,
             messages=messages
         )
+
+        llm_time = time.perf_counter() - llm_start
+        print(f"⏱️ LLM Step {step+1}: {llm_time:.2f}s")
 
         ai_output = response[
             "message"
@@ -85,25 +94,32 @@ def run_agent_graph(intrebare_utilizator):
                 .strip()
             )
 
+            summary_start = time.perf_counter()
+
             summary = summarize_answer(
                 intrebare_utilizator,
                 raspuns_final
             )
+
+            summary_time = time.perf_counter() - summary_start
+            print(f"⏱️ Summary model: {summary_time:.2f}s")
 
             add_memory(
                 intrebare_utilizator,
                 summary
             )
 
-            print(
-                "\n"
-                + "=" * 20
-                + " RĂSPUNS FINAL "
-                + "=" * 20
-            )
+            # print(
+            #     "\n"
+            #     + "=" * 20
+            #     + " RĂSPUNS FINAL "
+            #     + "=" * 20
+            # )
 
             # print(raspuns_final)
             # print("=" * 60)
+            total_time = time.perf_counter() - total_start
+            print(f"✅ Total response time: {total_time:.2f}s")
 
             return raspuns_final
 
@@ -128,16 +144,17 @@ def run_agent_graph(intrebare_utilizator):
                 "\n🔧 Execut tool..."
             )
             
-            result = execute_tool(
-                tool_text
-            )
+            tool_start = time.perf_counter()
+            result = execute_tool(tool_text)
+            tool_time = time.perf_counter() - tool_start
+            print(f"⏱️ Tool execution: {tool_time:.2f}s")
 
-            print(
-                "\n📄 Rezultat tool:"
-            )
-            print(
-                result[:1000]
-            )
+            # print(
+            #     "\n📄 Rezultat tool:"
+            # )
+            # print(
+            #     result[:1000]
+            # )
 
             messages.append({
                 "role": "user",
@@ -153,6 +170,9 @@ Rezultat tool:
         "\n⚠️ S-a atins limita de pași."
     )
 if __name__ == "__main__":
+
+    clear_memory_on_start()
+
     print("🤖 Sistemul Agentic Wiki a pornit!")
     print("💡 Scrie 'exit' sau 'quit' pentru a închide programul.")
     
