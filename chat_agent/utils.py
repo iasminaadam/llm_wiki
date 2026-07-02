@@ -1,47 +1,15 @@
 #utils.py
 import os
-import json
 from config import *
 from config import client, MODEL_NAME
-
-def load_memory():
-
-    if not os.path.exists(MEMORY_FILE):
-        return []
-
-    with open(
-        MEMORY_FILE,
-        "r",
-        encoding="utf-8"
-    ) as f:
-        return json.load(f)
     
-def save_memory(memory):
-
-    with open(
-        MEMORY_FILE,
-        "w",
-        encoding="utf-8"
-    ) as f:
-        json.dump(
-            memory,
-            f,
-            ensure_ascii=False,
-            indent=2
-        )
-
-def add_memory(question, answer):
-
-    memory = load_memory()
-
+def add_memory(memory, question, answer):
     memory.append({
         "question": question,
         "answer_summary": answer
     })
 
-    memory = memory[-MAX_MEMORY_ITEMS:]
-
-    save_memory(memory)
+    return memory[-MAX_MEMORY_ITEMS:]
 
 def summarize_answer(
     question,
@@ -72,10 +40,3 @@ def summarize_answer(
 
     return response["message"]["content"]
 
-def clear_memory_on_start():
-    if os.path.exists(MEMORY_FILE):
-        try:
-            with open(MEMORY_FILE, 'w') as f:
-                f.write('[]')
-        except Exception as e:
-            print(f"Error clearing memory: {e}")

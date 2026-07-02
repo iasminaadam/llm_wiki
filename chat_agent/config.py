@@ -1,12 +1,10 @@
 #config.py
 from ollama import Client
-import os
 
 WIKI_DIR = "../wiki/wiki"
 MODEL_NAME = "qwen2.5:32b"
 client = Client(host='http://localhost:11435')
 
-MEMORY_FILE = "memory.json"
 MAX_MEMORY_ITEMS = 5
 MAX_AGENT_STEPS = 5
 
