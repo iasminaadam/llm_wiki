@@ -92,8 +92,6 @@ RĂSPUNS FINAL
 Răspuns:
 [text]
 
-Nu mai folosi tool-uri după răspuns final.
-
 ────────────────────────
 REGULI
 ────────────────────────
