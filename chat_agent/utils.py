@@ -1,8 +1,6 @@
 #utils.py
 import os
-from config import *
-from config import client, MODEL_NAME
-from datetime import datetime
+from config import client, MODEL_NAME, MAX_MEMORY_ITEMS
     
 def add_memory(memory, question, answer):
     memory.append({
@@ -41,8 +39,3 @@ def summarize_answer(
 
     return response["message"]["content"]
 
-def get_date_time():
-    now = datetime.now()
-    return (
-        f"Data curentă este: {now.strftime('%Y-%m-%d')}; Ora curentă este: {now.strftime('%H:%M:%S')}"
-    )

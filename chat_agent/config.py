@@ -1,6 +1,6 @@
 #config.py
 from ollama import Client
-from utils import *
+from datetime import datetime
 
 WIKI_DIR = "../wiki/wiki"
 MODEL_NAME = "qwen2.5:32b"
@@ -8,6 +8,12 @@ client = Client(host='http://localhost:11435')
 
 MAX_MEMORY_ITEMS = 5
 MAX_AGENT_STEPS = 5
+
+def get_date_time():
+    now = datetime.now()
+    return (
+        f"Data curentă este: {now.strftime('%Y-%m-%d')}; Ora curentă este: {now.strftime('%H:%M:%S')}"
+    )
 
 DATE_TIME = get_date_time()
 
