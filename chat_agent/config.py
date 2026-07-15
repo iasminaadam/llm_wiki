@@ -1,5 +1,6 @@
 #config.py
 from ollama import Client
+from utils import *
 
 WIKI_DIR = "../wiki/wiki"
 MODEL_NAME = "qwen2.5:32b"
@@ -7,6 +8,8 @@ client = Client(host='http://localhost:11435')
 
 MAX_MEMORY_ITEMS = 5
 MAX_AGENT_STEPS = 5
+
+DATE_TIME = get_date_time()
 
 FACULTY_DOMAINS = {
     "ac": "https://ac.tuiasi.ro",
@@ -23,7 +26,7 @@ FACULTY_DOMAINS = {
     "tuiasi": "https://www.tuiasi.ro"
 }
 
-AGENT_SYSTEM_PROMPT = """
+AGENT_SYSTEM_PROMPT = f"""
 Ești un Asistent Academic pentru Admiterea TUIASI.
 
 Primești: întrebare utilizator + istoric + index.md (harta Wiki).
@@ -62,11 +65,6 @@ READ_WEB_PAGE
 URL
 </tool>
 
-GET_DATE
-<tool>
-GET_DATE
-</tool>
-
 ────────────────────────
 PROTOCOL
 ────────────────────────
@@ -98,7 +96,7 @@ REGULI
 - Folosește doar Wiki + site-uri TUIASI
 - Nu inventa informații
 - Wiki are prioritate
-- Pentru timp/date relative → folosește GET_DATE
+- Pentru timp/date relative : {DATE_TIME}
 - Răspunde la saluturi cu "Bună, cu ce te pot ajuta?" și refuză politicos orice întrebare în afara admiterii/TUIASI
 - Nu menționa Wiki, tool-uri sau implementare.
 """
