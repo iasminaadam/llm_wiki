@@ -43,6 +43,6 @@ def summarize_answer(
 
 def get_date_time():
     now = datetime.now()
-    print (
+    return (
         f"Data curentă este: {now.strftime('%Y-%m-%d')}; Ora curentă este: {now.strftime('%H:%M:%S')}"
     )
